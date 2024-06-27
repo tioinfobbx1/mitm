@@ -25,7 +25,7 @@ Description=Mitmweb Service
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/mitmweb --listen-host 0.0.0.0 --listen-port 7878 --web-iface 0.0.0.0 --web-port 7879 -s index.py --set block_global=false --set websocket=false
+ExecStart=/usr/bin/mitmweb --listen-host 0.0.0.0 --listen-port 7878 --web-iface 0.0.0.0 --web-port 7879 -s /root/mitm/index.py --set block_global=false --set websocket=false
 Restart=on-failure
 User=nobody
 Group=nogroup
